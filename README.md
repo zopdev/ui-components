@@ -4,7 +4,7 @@ This component library is made for React using tailwindcss.
 Goal of this project is to provide ready to use UI components to
 develop UI applications faster. 
 
-All components are documented in storybook. Use `npm run storybook`
+All components are documented in storybook. Use `npm run start`
 to start the storybook locally. Latest version of stories can also
 be accessed at https://zop.dev/ui-components 
 

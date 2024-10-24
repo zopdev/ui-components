@@ -9,6 +9,7 @@ export default {
         heading: { control: 'text' },
         subheading: { control: 'text' },
     },
+    tags: ['autodocs'],
 };
 
 export const Primary = {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon } from '@heroicons/react/20/solid';
+import PropTypes from "prop-types";
 
 const features = [
     {
@@ -100,3 +101,12 @@ export default function FeatureGrid({ title, heading, subheading, ...props }) {
         </div>
     );
 }
+
+FeatureGrid.propTypes = {
+    /** Smaller text at the top of component - couple of words */
+    title: PropTypes.string,
+    /** Large heading - ideally a single statement */
+    heading: PropTypes.string,
+    /** Small heading - can be descriptive */
+    subheading: PropTypes.string,
+};

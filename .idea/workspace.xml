@@ -49,6 +49,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Button" />
+      <recent name="$PROJECT_DIR$/src/components/FeatureGrid" />
+      <recent name="$PROJECT_DIR$/.storybook" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
