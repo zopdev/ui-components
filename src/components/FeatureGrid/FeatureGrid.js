@@ -37,8 +37,6 @@ import PropTypes from "prop-types";
  */
 
 /**
- * FeatureGrid component for displaying a grid of features.
- *
  * @param title
  * @param heading
  * @param subheading
@@ -47,6 +45,10 @@ import PropTypes from "prop-types";
  * @param variant
  * @param {FeatureGridProps} props - The component props.
  * @returns {JSX.Element}
+ */
+
+/**
+ * FeatureGrid component for displaying a grid of features.
  */
 
 export default function FeatureGrid({
