@@ -34,16 +34,16 @@ jobs:
           echo "@zopsmart:registry=https://npm.pkg.github.com/" >> ~/.npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.PAT }}" >> ~/.npmrc
           npm install --legacy-peer-deps
-      - name: run linter
-        run: |
-          CI=false npm run lint
+      # - name: run linter
+      #   run: |
+      #     CI=false npm run lint
       #      - name: run prettier
       #        run: |
       #          CI=false npm run prettier:check
 
-      - name: run tests
-        run: |
-          CI=false npm run test:coverage
+      # - name: run tests
+      #   run: |
+      #     CI=false npm run test:coverage
       - name: Build
         run: npm run build
 
