@@ -1,26 +1,18 @@
-FROM node:18 as build
+# base image nginx for serving content
+FROM nginx
 
+WORKDIR /usr/share/nginx/html
 
-WORKDIR /app
+#remove default conf files of nginx
+RUN rm /etc/nginx/nginx.conf
 
+#copy nginx.conf to container
+COPY nginx.conf /etc/nginx/
 
-COPY package*.json ./
+#copy build to container
+COPY storybook-static .
+# COPY .well-known .well-known
 
+EXPOSE 8000
 
-RUN npm install
-
-
-COPY . .
-
-
-RUN npm run build
-
-
-FROM nginx:alpine
-
-
-COPY --from=build /app/build /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/nginx.conf
-
-EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
