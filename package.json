@@ -58,5 +58,6 @@
     "tailwindcss": "^3.4.14",
     "tw-colors": "^3.3.2",
     "webpack": "^5.95.0"
-  }
+  },
+  "homepage": "/ui-components/"
 }
