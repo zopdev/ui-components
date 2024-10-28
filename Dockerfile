@@ -14,5 +14,4 @@ COPY storybook-static .
 # COPY .well-known .well-known
 
 EXPOSE 8000
-
 CMD ["nginx", "-g", "daemon off;"]
