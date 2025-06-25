@@ -6,7 +6,7 @@ on:
 
 env:
   APP_NAME: ui-components
-  NAMESPACE: kops-dev
+  NAMESPACE: zop-web
   CLUSTER_NAME: raramuri-tech
   CLUSTER_PROJECT: raramuri-tech
   GAR_PROJECT: raramuri-tech
