@@ -1,4 +1,4 @@
-import '../src/index.css';
+import "../src/index.css";
 
 import { withThemeByClassName } from "@storybook/addon-themes";
 
@@ -13,14 +13,15 @@ const preview = {
     },
   },
 
-  decorators: [withThemeByClassName({
+  decorators: [
+    withThemeByClassName({
       themes: {
-          // nameOfTheme: 'classNameForTheme',
-          'ZopDev': 'zopdev',
-          'Forest': 'forest'
+        ZopDev: "zopdev",
+        Dark: "forest",
       },
-      defaultTheme: 'ZopDev',
-  })]
+      defaultTheme: "ZopDev",
+    }),
+  ],
 };
 
 export default preview;
