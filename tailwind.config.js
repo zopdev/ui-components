@@ -1,6 +1,6 @@
 /** @type {DefaultColors} */
-const colors = require('tailwindcss/colors');
-const { createThemes } = require('tw-colors');
+const colors = require("tailwindcss/colors");
+const { createThemes } = require("tw-colors");
 
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -49,14 +49,13 @@ module.exports = {
     //   ]
     // })
 
-      createThemes({
-        forest: {
-            primary: colors.green
-        },
-        zopdev: {
-            primary: colors.cyan
-        }
-      })
+    createThemes({
+      forest: {
+        primary: colors.black,
+      },
+      zopdev: {
+        primary: colors.cyan,
+      },
+    }),
   ],
-}
-
+};
