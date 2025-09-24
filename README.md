@@ -1,24 +1,53 @@
 # UI Component Library
 
-This component library is made for React using tailwindcss. 
-Goal of this project is to provide ready to use UI components to
-develop UI applications faster. 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
+[![React](https://img.shields.io/badge/React-18+-61dafb?logo=react&logoColor=white)](https://react.dev/)  
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38bdf8?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)  
+[![Storybook](https://img.shields.io/badge/Storybook-7.x-ff4785?logo=storybook&logoColor=white)](https://storybook.js.org/)
 
-All components are documented in storybook. Use `npm run start`
-to start the storybook locally. Latest version of stories can also
-be accessed at https://zop.dev/ui-components 
+A **modern React + TailwindCSS UI component library** designed to help you build beautiful, accessible, and theme-friendly applications faster.
 
-## Developer Notes
-All components needs to support variety of themes to be used across
-multiple projects with different design language. Therefore, we can
-not use absolute values for colors, sizes, margin, padding, font family
-etc in components. Using arbitary values like `bg-[#bada55] text-[22px]`
-are not allowed. 
+👉 Explore live stories: **[zop.dev/ui-components](https://zop.dev/ui-components)**
 
-For colors, do not use something like `bg-slate-800`. Only allowed values are: primary, secondary, white, black, gray,
-red, yellow, green. In this context, red is used as a variable instead of 
-an absolute color like #ff0000. One can use `text-red-200` to indicate
-error in the component or `text-yellow-500` to indicate warning. A theme can choose
-to override this value to something which is more appropriate.
+---
 
-Similarly, we will only use tailwind default classes for font-size. 
+## ✨ Features
+
+- 📦 **Ready-to-use components** with full Storybook documentation
+- 🎨 **Theme-aware** — works across multiple design systems
+- 🛠 **TailwindCSS utility classes only** (no arbitrary values)
+- ⚡ **Fast development** — drop in and ship UI quickly
+- 🔄 **Composable & flexible** — designed for reuse across projects
+
+---
+
+## 📖 Storybook
+
+Run Storybook locally:
+
+```bash
+npm install
+npm run start
+```
+
+This launches Storybook at [http://localhost:6006](http://localhost:6006).
+
+---
+
+## 📝 Developer Guidelines
+
+To ensure **theme compatibility** and **design consistency**, follow these rules:
+
+1. **No arbitrary values**
+
+   - ❌ `bg-[#bada55] text-[22px]`
+   - ✅ `bg-primary text-lg`
+
+2. **Allowed color tokens only**
+
+   - `primary`, `secondary`, `white`, `black`, `gray`, `red`, `yellow`, `green`
+   - Use semantic Tailwind classes like `text-red-200` (error) or `text-yellow-500` (warning).
+   - Actual values may be overridden by project themes.
+
+3. **Font sizes**
+   - Only use Tailwind’s default typography scale (`text-sm`, `text-lg`, etc).
