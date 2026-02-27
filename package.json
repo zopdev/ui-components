@@ -58,7 +58,7 @@
     "storybook": "^8.3.6",
     "tailwindcss": "^3.4.14",
     "tw-colors": "^3.3.2",
-    "webpack": "^5.105.2"
+    "webpack": "^5.105.3"
   },
   "homepage": "/ui-components/"
 }
