@@ -60,5 +60,8 @@
     "tw-colors": "^3.3.2",
     "webpack": "^5.105.2"
   },
-  "homepage": "/ui-components/"
+  "homepage": "/ui-components/",
+  "overrides": {
+    "underscore": "1.13.8"
+  }
 }
